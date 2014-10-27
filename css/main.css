@@ -1,0 +1,10 @@
+
+#game-board img {
+    width: 200px;
+    height: 200px;
+    margin: 3px;
+}
+
+#game-board {
+    margin-left: 150px;
+}
