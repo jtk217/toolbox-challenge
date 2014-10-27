@@ -1,10 +1,45 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400);
+
+body {
+    background-color: #FEFEFD;
+}
+
+.page-header img {
+    width: 90px;
+    height: 90px;
+}
+
+.page-header h1 {
+    font-family: Lato, 'Helvetica Neue', Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 40pt;
+    color: dodgerblue;
+}
+
+p {
+    font-family: Lato, 'Helvetica Neue', Helvetica, sans-serif;
+    font-weight: 300;
+    color: darkslateblue;
+}
+
+
+
+#start-button {
+
+}
+
+#game-interface {
+    display: none;
+}
+
+#game-info p {
+    padding-top: 3px;
+    font-size: 150%;
+}
 
 #game-board img {
-    width: 200px;
-    height: 200px;
-    margin: 3px;
+    max-width: 150px;
+    width: 25%;
+    padding: 3px;
 }
 
-#game-board {
-    margin-left: 150px;
-}

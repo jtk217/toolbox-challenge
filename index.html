@@ -2,18 +2,35 @@
 <html>
     <head lang="en">
         <meta charset="UTF-8">
-        <title>Memory!</title>
+        <title>the memory Game</title>
 
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/main.css"/>
     </head>
     <body>
-        <h1>Memory!</h1>
-        <p id="elapsed-seconds"></p>
+        <main class="container">
+            <div class="page-header">
+                <img src="img/twoPears.jpg" alt="pair of a pair of pears" class="pull-right">
+                <img src="img/twoPears.jpg" alt="pair of a pair of pears" class="pull-right">
 
-        <div id="game-board"></div>
+                <h1>the memory game</h1>
+                <p class="lead">click the tiles to unveil its image. match the pairs to win the game!</p>
+            </div>
 
-        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
-        <script src="js/app.js"></script>
+            <button type="button" id="start-button" class="btn btn-primary">Start!</button>
+
+            <section id="game-interface" class="row">
+                <div id="game-info" class="col-md-2">
+                    <p id="elapsed-seconds">time: </p>
+                </div>
+                <div id="game-board" class="col-md-10"></div>
+            </section>
+
+
+            <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+            <script src="js/app.js"></script>
+        </main>
     </body>
 </html>
