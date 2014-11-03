@@ -4,31 +4,50 @@
         <meta charset="UTF-8">
         <title>the memory Game</title>
 
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/main.css"/>
     </head>
     <body>
         <main class="container">
             <div class="page-header">
-                <img src="img/twoPears.jpg" alt="pair of a pair of pears" class="pull-right">
-                <img src="img/twoPears.jpg" alt="pair of a pair of pears" class="pull-right">
+                <img src="img/twoPears.jpg" alt="pair of a pair of pears" class="head-image pull-right">
+                <img src="img/twoPears.jpg" alt="pair of a pair of pears" class="head-image pull-right">
 
                 <h1>the memory game</h1>
-                <p class="lead">click the tiles to unveil its image. match the pairs to win the game!</p>
+                <p class="lead">click tiles to unveil images and match the pairs to win the game!</p>
             </div>
 
-            <button type="button" id="start-button" class="btn btn-primary">Start!</button>
+            <div class="modal fade" id="winning-modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            <h4 id="modal-title" class="modal-title">you're a winner!</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p id="modal-body"></p>
+                        </div>
+                        <div class="modal-footer">
+                            <button id="modal-button" type="button" class="btn btn-primary" data-dismiss="modal">again, again, again!</button>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+
+            <button type="button" id="start-button" class="btn btn-primary">start!</button>
 
             <section id="game-interface" class="row">
                 <div id="game-info" class="col-md-2">
                     <p id="elapsed-seconds">time: </p>
+                    <p id="matches">matches: </p>
+                    <p id="remaining">remaining: </p>
+                    <p id="missed">missed: </p>
                 </div>
                 <div id="game-board" class="col-md-10"></div>
             </section>
 
-
             <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+            <script src="bootstrap/js/bootstrap.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
             <script src="js/app.js"></script>
         </main>

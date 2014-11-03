@@ -9,7 +9,7 @@ body {
     height: 90px;
 }
 
-.page-header h1 {
+.page-header h1, h4 {
     font-family: Lato, 'Helvetica Neue', Helvetica, sans-serif;
     font-weight: 300;
     font-size: 40pt;
@@ -22,10 +22,13 @@ p {
     color: darkslateblue;
 }
 
-
+#modal-body {
+    font-size: 20pt;
+}
 
 #start-button {
-
+    margin-bottom: 10px;
+    margin-left: 2px;
 }
 
 #game-interface {
@@ -35,6 +38,15 @@ p {
 #game-info p {
     padding-top: 3px;
     font-size: 150%;
+    margin: 0;
+}
+
+#game-info {
+    padding-left: 17px;
+}
+
+#game-board {
+    margin-bottom: 180px;
 }
 
 #game-board img {
@@ -43,3 +55,38 @@ p {
     padding: 3px;
 }
 
+#modal-title {
+    font-size: 40pt;
+}
+
+.btn {
+    font-family: Lato, 'Helvetica Neue', Helvetica, sans-serif;
+    font-weight: 300;;
+}
+
+@media screen and (max-width: 640px) {
+    .head-image {
+        display: none;
+    }
+
+    .page-header h1 {
+        font-size: 30pt;
+    }
+
+    #game-info p {
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #game-info p {
+        display: inline-block;
+        padding-right: 30px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #restart-button {
+        margin-top: 7px;
+    }
+}
